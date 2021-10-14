@@ -1,0 +1,427 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="index.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;1,500&family=Noto+Sans+Display:ital,wght@0,700;1,500&family=PT+Serif&display=swap"
+  rel="stylesheet"
+/>
+<div class="myform">
+  <div class="head1">
+    <h1 class="head3" id="title">
+      <span>
+        <img
+          class="rounded logoimg"
+          src="https://miro.medium.com/fit/c/1360/1360/1*2CxNTEf0ywb2tvW0B9l4Yg.png"
+          alt="Generic placeholder image"
+        />
+      </span>
+      <p id="description">Guvi survey Form</p>
+    </h1>
+  </div>
+  <form id="survey-form" class="survey-form" onsubmit="submitForm()">
+    <div class="form-group">
+      <label id="name-label">Name<span style="color: #ff0000">*</span></label>
+      <div class="row">
+        <div class="col-sm-6">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First Name"
+            required="true"
+            id="first-name"
+          />
+        </div>
+        <div class="col-sm-6">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last Name"
+            id="last-name"
+            required="true"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group my-2">
+      <label for="email" id="email-label">
+        Email<span style="color: #ff0000">*</span>
+      </label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        placeholder="mail@email.com"
+        required
+      />
+    </div>
+
+    <div class="form-group my-2">
+      <label for="inputfirst">
+        Your Experience
+        <span style="color: #ff0000">*</span>
+      </label>
+      <span class="star-rating">
+        <input type="radio" name="rating1" value="1" required /><i></i>
+        <input type="radio" name="rating1" value="2" /><i></i>
+        <input type="radio" name="rating1" value="3" /><i></i>
+        <input type="radio" name="rating1" value="4" /><i></i>
+        <input type="radio" name="rating1" value="5" /><i></i>
+      </span>
+    </div>
+    <div class="form-group">
+      <label for="feedback1">
+        How satisfied are you with<span style="color: #ff0000">*</span>
+      </label>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Very Unsatisfied</th>
+              <th scope="col">Unsatisfied</th>
+              <th scope="col">Neutral</th>
+              <th scope="col">Satisfied</th>
+              <th scope="col">Very Satisfied</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="firstrow">Purchase</th>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback"
+                  value="f1"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback"
+                  value="f2"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback"
+                  value="f3"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback"
+                  value="f4"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback"
+                  value="f5"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="firstrow">Service</th>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback2"
+                  value="f1"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback2"
+                  value="f2"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback2"
+                  value="f3"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback2"
+                  value="f4"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback2"
+                  value="f5"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="firstrow">Company Overall</th>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback3"
+                  value="f1"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback3"
+                  value="f2"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback3"
+                  value="f3"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback3"
+                  value="f4"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="satisfied"
+                  name="feedback3"
+                  value="f5"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br />
+    <div class="form-group">
+      <label for="liked">
+        How likely are you to<span style="color: #ff0000">*</span>
+      </label>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Very Unsatisfied</th>
+              <th scope="col">Unsatisfied</th>
+              <th scope="col">Neutral</th>
+              <th scope="col">Satisfied</th>
+              <th scope="col">Very Satisfied</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="firstrow">Buy from us again</th>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback4"
+                  value="l1"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback4"
+                  value="l2"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback4"
+                  value="l3"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback4"
+                  value="l4"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback4"
+                  value="l5"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="firstrow">Recommend our <br />product to other</th>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback5"
+                  value="l1"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback5"
+                  value="l2"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback5"
+                  value="l3"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback5"
+                  value="l4"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback5"
+                  value="l5"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="firstrow">Recommend our <br />company to other</th>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback6"
+                  value="l1"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback6"
+                  value="l2"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback6"
+                  value="l3"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback6"
+                  value="l4"
+                />
+              </td>
+              <td>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="liked"
+                  name="feedback6"
+                  value="l5"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Additional comments or suggestions</label>
+      <textarea class="form-control" id="comments" rows="3"></textarea>
+    </div>
+
+    <div class="my-2">
+      <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+
+<script src="index.js"></script>
