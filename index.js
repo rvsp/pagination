@@ -1,7 +1,6 @@
 // coded by @rvsp
 /* eslint-disable no-unused-vars */
 /* eslint-disable guard-for-in */
-const projectName = 'dom-pagination';
 let tableData = [
   {
     id: '1',
